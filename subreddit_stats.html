@@ -13389,7 +13389,7 @@ done
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">adj_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">posts</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
@@ -13409,7 +13409,7 @@ done
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;author:         </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">author</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time:           </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ts_str</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;score:          </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">score</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;adjusted score: </span><span class="si">%0.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">score</span><span class="p">)</span> <span class="o">/</span> <span class="n">subcount</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">ts</span><span class="p">)]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;adjusted score: </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">score</span><span class="p">)</span> <span class="o">/</span> <span class="n">subcount</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">ts</span><span class="p">)]))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;comments:       </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">comments</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;permalink:      https://www.reddit.com</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">url</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">()</span>
@@ -13434,7 +13434,7 @@ title:          Dreamcatcher (드림캐쳐) - &#39;YOU AND I&#39; MV
 author:         SpideyCyclist
 time:           2018-05-10 09:01:59
 score:          172
-adjusted score: 0.17
+adjusted score: 0.172172
 comments:       15
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/8idh2r/dreamcatcher_드림캐쳐_you_and_i_mv/
 
@@ -13443,7 +13443,7 @@ title:          New Fans Guide To Dreamcatcher
 author:         SpideyCyclist
 time:           2018-05-10 13:41:43
 score:          125
-adjusted score: 0.12
+adjusted score: 0.124875
 comments:       29
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/8ieyin/new_fans_guide_to_dreamcatcher/
 
@@ -13452,7 +13452,7 @@ title:          Dami, please..
 author:         myblindy
 time:           2018-05-11 15:08:56
 score:          114
-adjusted score: 0.11
+adjusted score: 0.111220
 comments:       7
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/8ioh7t/dami_please/
 
@@ -13461,7 +13461,7 @@ title:          Dreamcatcher (드림캐쳐) - &#39;What&#39; MV
 author:         SpideyCyclist
 time:           2018-09-20 09:00:45
 score:          189
-adjusted score: 0.10
+adjusted score: 0.096824
 comments:       35
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/9hdotl/dreamcatcher_드림캐쳐_what_mv/
 
@@ -13470,7 +13470,7 @@ title:          Dreamcatcher to guest on Weekly Idol for the first time since th
 author:         ItFactorScott
 time:           2018-05-14 23:20:14
 score:          89
-adjusted score: 0.08
+adjusted score: 0.081877
 comments:       21
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/8jgufr/dreamcatcher_to_guest_on_weekly_idol_for_the/
 
@@ -13479,7 +13479,7 @@ title:          Beautiful JiU!
 author:         myblindy
 time:           2018-03-10 18:12:10
 score:          67
-adjusted score: 0.08
+adjusted score: 0.078809
 comments:       1
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/83gue8/beautiful_jiu/
 
@@ -13488,7 +13488,7 @@ title:          Darth Minji
 author:         myblindy
 time:           2018-05-19 01:00:52
 score:          86
-adjusted score: 0.08
+adjusted score: 0.075439
 comments:       5
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/8khxrb/darth_minji/
 
@@ -13497,7 +13497,7 @@ title:          Happy Minji Day!
 author:         myblindy
 time:           2018-05-16 17:38:17
 score:          82
-adjusted score: 0.07
+adjusted score: 0.074007
 comments:       4
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/8jwvft/happy_minji_day/
 
@@ -13506,7 +13506,7 @@ title:          The Bias. Yoohyeon forever
 author:         Mark_Kostecki
 time:           2018-05-17 05:47:00
 score:          80
-adjusted score: 0.07
+adjusted score: 0.071492
 comments:       13
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/8k1vcc/the_bias_yoohyeon_forever/
 
@@ -13515,7 +13515,7 @@ title:          When Yoohyeon&#39;s done being the nice girl
 author:         myblindy
 time:           2018-02-19 06:32:40
 score:          57
-adjusted score: 0.07
+adjusted score: 0.070759
 comments:       3
 permalink:      https://www.reddit.com/r/dreamcatcher/comments/7ykrd4/when_yoohyeons_done_being_the_nice_girl/
 
