@@ -1,2 +1,2 @@
 client_id: ''
-clinet_secret: ''
+client_secret: ''
